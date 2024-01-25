@@ -1,9 +1,9 @@
 <?php 
-if(isset($_GET["nome"]) && isset($_GET["email"]) && isset($_GET["età"])){
+if(isset($_GET["nome"]) && isset($_GET["email"]) && isset($_GET["eta"])){
     $nome = $_GET["nome"];
     $email = $_GET["email"];
-    $età = $_GET["età"];
-    if (strlen($nome) > 3 && str_contains($email, ".") && str_contains($email, "@") && is_numeric($età)){
+    $età = $_GET["eta"];
+    if (strlen($nome) > 3 && str_contains($email, ".") && str_contains($email, "@") && is_numeric($eta)){
         echo "Accesso Riuscito";
        
     }
@@ -43,8 +43,8 @@ if(isset($_GET["nome"]) && isset($_GET["email"]) && isset($_GET["età"])){
                     <input type="text" name="email" class="form-control" placeholder="E-mail" required>
                 </div>
                 <div class="col-4 mt-2">
-                    <label for="età">Inserisci la tua età</label>
-                    <input type="text" name="età" class="form-control" placeholder="Età" required>
+                    <label for="eta">Inserisci la tua eta</label>
+                    <input type="text" name="eta" class="form-control" placeholder="Eta" required>
                 </div>
             </div>
             
